@@ -1,0 +1,53 @@
+{
+  "name": "vue-schema-form",
+  "descript": "基于 vue2 的配置化表单组件",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./dist/index.js",
+  "author": "nickzone<https://github.com/nickzone>",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build:dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --watch",
+    "preversion": "npm run build",
+    "version": "git add .",
+    "postversion": "git push && git push --tags",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "form",
+    "json"
+  ],
+  "peerDependencies": {
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.7.0",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "eslint": "^6.6.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-vue": "^5.2.3",
+    "file-loader": "^3.0.1",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.21",
+    "postcss-loader": "^3.0.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^2.2.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-transform-modules-plugin": "^0.4.4"
+  },
+  "dependencies": {
+    "async-validator": "^3.2.3"
+  }
+}
